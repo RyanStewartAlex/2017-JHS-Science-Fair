@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import glob
 
 #variables
-fileName = raw_input('Entire the file name: ')
+fileName = input('Enter the file name: ')
 img1 = cv2.imread('people/' + fileName, 0) #haystack
 img2s = glob.glob('people/templates/*') #needles
 orb = cv2.ORB_create()
